@@ -61,3 +61,75 @@
 [2026-08-08 17:49:38,020: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<
 
 x==========x]
+[2026-08-08 18:15:03,845: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 18:15:03,858: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 18:15:03,869: INFO: common: created directory at: artifacts]
+[2026-08-08 18:15:03,876: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-08-08 18:15:06,569: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-08-08 18:17:19,596: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 18:17:19,606: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 18:17:19,612: INFO: common: created directory at: artifacts]
+[2026-08-08 18:17:19,619: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-08-08 18:17:20,522: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-08-08 18:28:20,339: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2026-08-08 18:28:20,344: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 18:28:20,348: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 18:28:20,350: INFO: common: created directory at: artifacts]
+[2026-08-08 18:28:20,352: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\main.py", line 9, in <module>
+    obj.main()
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2026-08-08 18:29:19,688: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2026-08-08 18:29:19,693: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 18:29:19,697: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 18:29:19,698: INFO: common: created directory at: artifacts]
+[2026-08-08 18:29:19,699: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\main.py", line 9, in <module>
+    obj.main()
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2026-08-08 18:31:55,241: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2026-08-08 18:31:55,245: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 18:31:55,250: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 18:31:55,253: INFO: common: created directory at: artifacts]
+[2026-08-08 18:31:55,255: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-08-08 18:31:55,267: INFO: data_ingestion: Downloading file from: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into: artifacts/data_ingestion/data.zip]
+[2026-08-08 18:32:58,906: INFO: data_ingestion: Downloaded file from: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into: artifacts/data_ingestion/data.zip]
+[2026-08-08 18:33:01,169: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<
+
+x==========x]
+[2026-08-08 18:33:01,169: INFO: main: >>>>> stage Prepare Base Model started <<<<<]
+[2026-08-08 18:33:01,173: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 18:33:01,178: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 18:33:01,179: INFO: common: created directory at: artifacts]
+[2026-08-08 18:33:01,180: ERROR: main: 'PrepareBaseModelTrainingPipeline' object has no attribute 'prepare_base_model_config']
+Traceback (most recent call last):
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\main.py", line 21, in <module>
+    prepare_base_model_pipeline.main()
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 14, in main
+    prepare_base_model = PrepareBaseModel(config=self.prepare_base_model_config)
+AttributeError: 'PrepareBaseModelTrainingPipeline' object has no attribute 'prepare_base_model_config'
+[2026-08-08 18:36:12,825: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2026-08-08 18:36:12,831: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 18:36:12,837: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 18:36:12,840: INFO: common: created directory at: artifacts]
+[2026-08-08 18:36:12,842: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-08-08 18:36:12,846: INFO: data_ingestion: Downloading file from: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into: artifacts/data_ingestion/data.zip]
+[2026-08-08 18:37:45,473: INFO: data_ingestion: Downloaded file from: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into: artifacts/data_ingestion/data.zip]
+[2026-08-08 18:37:47,483: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<
+
+x==========x]
+[2026-08-08 18:37:47,483: INFO: main: >>>>> stage Prepare Base Model started <<<<<]
+[2026-08-08 18:37:47,489: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 18:37:47,494: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 18:37:47,497: INFO: common: created directory at: artifacts]
+[2026-08-08 18:37:47,499: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-08-08 18:37:48,376: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-08-08 18:37:48,861: INFO: main: >>>>> stage Prepare Base Model completed <<<<<
+
+x==========x]
