@@ -133,3 +133,169 @@ x==========x]
 [2026-08-08 18:37:48,861: INFO: main: >>>>> stage Prepare Base Model completed <<<<<
 
 x==========x]
+[2026-08-08 19:19:43,593: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 19:19:43,604: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 19:19:43,610: INFO: common: created directory at: artifacts]
+[2026-08-08 19:21:03,462: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 19:21:03,470: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 19:21:03,477: INFO: common: created directory at: artifacts]
+[2026-08-08 19:22:15,885: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 19:22:15,893: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 19:22:15,899: INFO: common: created directory at: artifacts]
+[2026-08-08 19:22:15,906: INFO: common: created directory at: artifacts\training]
+[2026-08-08 19:23:16,270: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 19:23:16,277: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 19:23:16,283: INFO: common: created directory at: artifacts]
+[2026-08-08 19:23:16,288: INFO: common: created directory at: artifacts\training]
+[2026-08-08 19:26:39,537: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 19:26:39,546: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 19:26:39,552: INFO: common: created directory at: artifacts]
+[2026-08-08 19:26:39,559: INFO: common: created directory at: artifacts\training]
+[2026-08-08 19:26:55,410: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 19:26:55,419: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 19:26:55,424: INFO: common: created directory at: artifacts]
+[2026-08-08 19:26:55,428: INFO: common: created directory at: artifacts\training]
+[2026-08-08 19:27:23,144: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 19:27:23,154: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 19:27:23,160: INFO: common: created directory at: artifacts]
+[2026-08-08 19:27:23,166: INFO: common: created directory at: artifacts\training]
+[2026-08-08 19:29:56,390: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 19:29:56,399: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 19:29:56,404: INFO: common: created directory at: artifacts]
+[2026-08-08 19:29:56,411: INFO: common: created directory at: artifacts\training]
+[2026-08-08 19:32:08,901: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-08 19:32:08,913: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-08 19:32:08,919: INFO: common: created directory at: artifacts]
+[2026-08-08 19:32:08,924: INFO: common: created directory at: artifacts\training]
+[2026-08-09 11:59:24,630: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2026-08-09 11:59:24,638: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-09 11:59:24,645: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-09 11:59:24,649: INFO: common: created directory at: artifacts]
+[2026-08-09 11:59:24,651: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-08-09 11:59:24,654: INFO: data_ingestion: Downloading file from: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into: artifacts/data_ingestion/data.zip]
+[2026-08-09 12:00:01,381: INFO: data_ingestion: Downloaded file from: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into: artifacts/data_ingestion/data.zip]
+[2026-08-09 12:00:04,069: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<
+
+x==========x]
+[2026-08-09 12:00:04,070: INFO: main: >>>>> stage Prepare Base Model started <<<<<]
+[2026-08-09 12:00:04,079: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-09 12:00:04,083: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-09 12:00:04,084: INFO: common: created directory at: artifacts]
+[2026-08-09 12:00:04,086: ERROR: main: "'ConfigBox' object has no attribute 'preprare_base_model'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'preprare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'preprare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'preprare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'preprare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'preprare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'preprare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'preprare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\main.py", line 22, in <module>
+    prepare_base_model_pipeline.main()
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 18, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\src\cnnClassifier\config\configuration.py", line 39, in get_prepare_base_model_config
+    config = self.config.preprare_base_model
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'preprare_base_model'"
+[2026-08-09 12:03:02,949: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2026-08-09 12:03:02,955: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-09 12:03:02,959: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-09 12:03:02,961: INFO: common: created directory at: artifacts]
+[2026-08-09 12:03:02,963: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-08-09 12:03:02,964: INFO: data_ingestion: Downloading file from: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into: artifacts/data_ingestion/data.zip]
+[2026-08-09 12:03:30,790: INFO: data_ingestion: Downloaded file from: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into: artifacts/data_ingestion/data.zip]
+[2026-08-09 12:03:33,144: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<
+
+x==========x]
+[2026-08-09 12:03:33,144: INFO: main: >>>>> stage Prepare Base Model started <<<<<]
+[2026-08-09 12:03:33,150: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-09 12:03:33,154: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-09 12:03:33,156: INFO: common: created directory at: artifacts]
+[2026-08-09 12:03:33,158: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-08-09 12:03:35,681: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-08-09 12:03:36,173: INFO: main: >>>>> stage Prepare Base Model completed <<<<<
+
+x==========x]
+[2026-08-09 12:03:36,174: INFO: main: *************]
+[2026-08-09 12:03:36,174: INFO: main: >>>>> stage Training started <<<<<<]
+[2026-08-09 12:03:36,179: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-09 12:03:36,185: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-09 12:03:36,186: INFO: common: created directory at: artifacts]
+[2026-08-09 12:03:36,188: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-08-09 12:03:36,188: ERROR: main: 'DataIngestionConfig' object has no attribute 'updated_base_model_path']
+Traceback (most recent call last):
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\main.py", line 33, in <module>
+    obj.main()
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\src\cnnClassifier\pipeline\stage_03_model_training.py", line 15, in main
+    training.get_base_model()
+  File "D:\Kidney-Disease-Classification-MLflow-DVC\src\cnnClassifier\components\model_training.py", line 18, in get_base_model
+    self.config.updated_base_model_path
+AttributeError: 'DataIngestionConfig' object has no attribute 'updated_base_model_path'
+[2026-08-09 12:07:14,075: INFO: main: >>>>> stage Data Ingestion Stage started <<<<<]
+[2026-08-09 12:07:14,080: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-09 12:07:14,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-09 12:07:14,087: INFO: common: created directory at: artifacts]
+[2026-08-09 12:07:14,088: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-08-09 12:07:14,090: INFO: data_ingestion: Downloading file from: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into: artifacts/data_ingestion/data.zip]
+[2026-08-09 12:07:41,147: INFO: data_ingestion: Downloaded file from: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into: artifacts/data_ingestion/data.zip]
+[2026-08-09 12:07:43,434: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<
+
+x==========x]
+[2026-08-09 12:07:43,434: INFO: main: >>>>> stage Prepare Base Model started <<<<<]
+[2026-08-09 12:07:43,439: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-09 12:07:43,443: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-09 12:07:43,445: INFO: common: created directory at: artifacts]
+[2026-08-09 12:07:43,446: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-08-09 12:07:44,398: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-08-09 12:07:44,942: INFO: main: >>>>> stage Prepare Base Model completed <<<<<
+
+x==========x]
+[2026-08-09 12:07:44,942: INFO: main: *************]
+[2026-08-09 12:07:44,943: INFO: main: >>>>> stage Training started <<<<<<]
+[2026-08-09 12:07:44,948: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-08-09 12:07:44,952: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-08-09 12:07:44,954: INFO: common: created directory at: artifacts]
+[2026-08-09 12:07:44,955: INFO: common: created directory at: artifacts\training]
+[2026-08-09 12:10:13,310: INFO: main: >>>>>>> stage Training completed <<<<<<<
+
+x=========x]
