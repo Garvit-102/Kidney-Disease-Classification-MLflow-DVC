@@ -9,6 +9,7 @@ os.putenv("LC_ALL","en_US.UTF-8")
 
 app = Flask(__name__)
 CORS(app)
+### This is python class
 
 class ClientApp:
     def __init__(self):
