@@ -1,3 +1,5 @@
 /kidney
 
 artifacts/*
+
+dvc.lock/
